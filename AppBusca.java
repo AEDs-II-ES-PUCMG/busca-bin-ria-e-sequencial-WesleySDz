@@ -142,7 +142,7 @@ public class AppBusca {
 
     static void fazerBuscaAleatoria() {
         IBuscador<Produto> buscador = new BuscaAleatoria<>(produtos);
-        Produto prod = buscador.buscar(null);
+        Produto prod = localizarProduto(buscador);
         resultadoBusca(prod, buscador);
     }
 
